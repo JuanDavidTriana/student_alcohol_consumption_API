@@ -29,7 +29,7 @@ class StudentData(BaseModel):
     features: list  # La lista de características del estudiante
 
 #Ruta de estado
-@app.get("/status")
+@app.get("/")
 async def status():
     return {
             "status": True,
